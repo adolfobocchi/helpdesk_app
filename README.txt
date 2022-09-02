@@ -1,0 +1,1 @@
+npm i -s axios react-redux react-router-dom redux redux-persist redux-saga
