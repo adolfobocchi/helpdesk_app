@@ -12,6 +12,10 @@ body {
   background: #F1F2F5;
 }
 
+.click {
+  cursor: pointer;
+}
+
 
 p.primaria {
   color: #004A8C;
@@ -27,6 +31,14 @@ p.title {
   letter-spacing: 1px
 }
 
+p.title-small {
+  color:#D95716;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px
+}
+
+
 
 p.secundaria {
   color: #000;
@@ -39,6 +51,7 @@ p.caption {
   color: #AAA;
   font-weight: 300;
   font-size: 14px;
+  text-align: justify;
 }
 
 p.captionBlack {
@@ -172,7 +185,10 @@ p.captionBlack {
 
 
 .catalogArea {
-  
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
   
 }
 
@@ -200,3 +216,27 @@ p.captionBlack {
   margin: 3px;
 }
 
+
+.catalogItemArea {
+  display: flex;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  padding: 16px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.catalogItemImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+}
+
+.catalogItemDescriptionArea {
+  flex-direction: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}

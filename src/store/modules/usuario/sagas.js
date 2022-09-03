@@ -1,5 +1,5 @@
 import Api from "../../../services/api";
-import { loginFailure } from "./actions";
+import { loginFailure, loginSuccess } from "./actions";
 import { all, put, takeLatest} from 'redux-saga/effects';
 
 async function logIn(email, password) {

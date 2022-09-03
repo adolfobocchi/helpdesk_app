@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 function RecentHelp() {
+    const navigate = useNavigate();
     return (<>
         <div className="recentHelpArea">
             <div className="recentHeader">
@@ -9,7 +12,7 @@ function RecentHelp() {
 
             </div>
             <div className="footerList">
-                <p className="captionBlack">+ Visualizar todas as minhas solicitações</p>
+                <p onClick={()=> navigate('issues')} className="captionBlack click">+ Visualizar todas as minhas solicitações</p>
             </div>
         </div>
     </>)
